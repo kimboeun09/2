@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>둘 중 하나 선택하기</title>
+    <h1> 퍼스널 컬러 자가진단 </h1>
+	<style>
+        h1 {
+         top: 10%;
+         transform: translate(+43%, -30%);
+         font-size: 30px;
+         font-weight: bold;
+         color: black;
+        }
+		form {
+		  margin: 20px auto;
+		  max-width: 600px;
+		  text-align: center;
+		}
+		
+		label {
+		  display: block;
+		  margin: 10px;
+		}
+		
+		input[type="radio"] {
+		  display: none;
+		}
+		
+		img {
+		  display: inline-block;
+		  border: 0.5px solid #ccc;
+		  padding: 1px;
+		  margin: 10px;
+		  width: 200px;
+		  height: 200px;
+		}
+		
+		input[type="radio"]:checked + img {
+        border: 3px solid black;
+		}
+        
+	</style>
+</head>
+<body>
+	<form>
+		<label>
+			<input type="radio" name="choice" >
+            <img src="C:\Users\user\Desktop\qwert\1234.jpg">
+		</label>
+		
+		<label>
+			<input type="radio" name="choice" >
+			<img src="C:\Users\user\Desktop\qwert\5678.jpg">
+		</label>
+		
+		<input type="submit" value="다음 으로">
+	</form>
+
+</body>
+</html>
